@@ -8,12 +8,13 @@ const coords = data.reduce(
         switch (direction) {
             case "forward":
                 coords.horizontal += parseInt(steps);
+                coords.depth += parseInt(steps) * coords.aim;
                 break;
             case "up":
-                coords.depth -= parseInt(steps);
+                coords.aim -= parseInt(steps);
                 break;
             case "down":
-                coords.depth += parseInt(steps);
+                coords.aim += parseInt(steps);
                 break;
             default:
                 break;
@@ -24,6 +25,7 @@ const coords = data.reduce(
     {
         depth: 0,
         horizontal: 0,
+        aim: 0,
     }
 );
 
