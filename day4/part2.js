@@ -1,5 +1,6 @@
 const { match } = require("assert");
 const fs = require("fs");
+const test = "test";
 
 const data = fs.readFileSync("input.txt", "utf-8").split("\n");
 
