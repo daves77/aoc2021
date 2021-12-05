@@ -82,4 +82,4 @@ table.map((row) =>
         if (el >= 2) points += 1;
     })
 );
-points;
+console.log(points);
