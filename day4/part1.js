@@ -79,4 +79,5 @@ const findWinner = () => {
 };
 
 const { table, number } = findWinner();
+console.log(calculateSumOfTable(table), number);
 console.log(calculateSumOfTable(table) * number);
